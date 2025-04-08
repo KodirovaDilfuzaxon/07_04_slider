@@ -5,31 +5,37 @@
 }
 #app {
   user-select: none;
-  width: 100vw;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+ul {
+  list-style-type: none;
 }
 .slider-container {
   background: red;
-  min-height: 100px;
+
   width: 100%;
   max-width: 32rem;
 }
-
 .slider-container ul {
-  list-style-type: none;
   display: flex;
-  /* border: 1pt solid black; */
+  overflow: hidden;
+
 }
+
 .slider-container ul li {
-  border: 1pt solid black;
+  border: 1px solid black;
   display: flex;
-  max-width: 100%;
+  min-width: 100%;
+  height: 16rem;
 }
+
 .slider-container img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
